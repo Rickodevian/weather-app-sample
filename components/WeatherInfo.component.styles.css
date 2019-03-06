@@ -1,0 +1,38 @@
+.weather-info-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+}
+.left-info {
+    display: flex;
+    flex-direction: column;
+}
+.right-info {
+    display: flex;
+    flex-direction: column;
+}
+span {
+    color: #878787;
+    padding-bottom: 5px;
+}
+.image-weather {
+    height: 64px;
+    width: 64px;
+    padding-right: 5px;
+}
+.degree-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text {
+    padding-bottom: 5px;
+}
+.degree-text {
+    font-size: 54px;
+}
+.degree-type {
+    font-size: 16px;
+    padding-right: 3px;
+}

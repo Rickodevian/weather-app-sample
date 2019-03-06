@@ -1,0 +1,63 @@
+{
+    "name": "Weather",
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "test": "jest",
+        "test:watch": "jest --watch",
+        "test:coverage": "jest --coverage"
+    },
+    "jest": {
+        "setupFiles": [
+            "./tests/setup.js"
+        ],
+        "snapshotSerializers": [
+            "enzyme-to-json/serializer"
+        ],
+        "transform": {
+            "\\.js$": "babel-jest"
+        },
+        "verbose": true,
+        "moduleNameMapper": {
+            "^image![a-zA-Z0-9$_-]+$": "GlobalImageStub",
+            "^[@./a-zA-Z0-9$_-]+\\.(png|gif)$": "RelativeImageStub"
+        },
+        "moduleFileExtensions": [
+            "js",
+            "jsx"
+        ],
+        "transformIgnorePatterns": [
+            "<rootDir>/node_modules/"
+        ],
+        "moduleDirectories": [
+            "node_modules"
+        ]
+    },
+    "dependencies": {
+        "@zeit/next-css": "^1.0.1",
+        "isomorphic-unfetch": "^3.0.0",
+        "lodash": "^4.17.11",
+        "next": "^8.0.3",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3",
+        "react-horizontal-scrolling-menu": "^0.5.3",
+        "react-redux": "^6.0.1",
+        "redux": "^4.0.1",
+        "redux-actions": "^2.6.5",
+        "type-to-reducer": "^1.1.0"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "babel-core": "^6.26.3",
+        "babel-jest": "^24.1.0",
+        "babel-plugin-syntax-class-properties": "^6.13.0",
+        "babel-plugin-transform-class-properties": "^6.24.1",
+        "enzyme": "^3.9.0",
+        "enzyme-adapter-react-16": "^1.10.0",
+        "enzyme-to-json": "^3.3.5",
+        "jest": "^24.1.0",
+        "react-test-renderer": "^16.8.3"
+    }
+}
